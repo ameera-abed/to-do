@@ -1,0 +1,6 @@
+.done{
+    text-decoration:line-through;
+}
+.not-done{
+    text-decoration:none;
+}
