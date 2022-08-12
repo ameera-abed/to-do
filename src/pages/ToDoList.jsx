@@ -1,10 +1,13 @@
-import React,{useState} from 'react'; 
+import React,{useState,useEffect} from 'react'; 
 import FormToDo from '../components/FormToDo';
 import { v4 as uuid } from 'uuid';
 import ToDo from '../components/ToDo'
 
 function ToDoList() {
-const [toDos,setToDos]=useState([]);
+const [toDos,setToDos]=useState(JSON.parse(localStorage.getItem('Todos')) ?? []);
+useEffect(()=>{
+  localStorage.setItem('Todos',JSON.stringify(toDos));
+},[toDos]);
 
  const addToDo =(text)=>{
         const unique_id = uuid();

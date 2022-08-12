@@ -4,3 +4,29 @@
 .not-done{
     text-decoration:none;
 }
+
+.todo{
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    align-items: center;
+    background: rgb(212,37,255);
+background: linear-gradient(90deg, rgba(212,37,255,1) 0%, rgba(32,26,29,1) 67%);
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:10px;
+}
+
+.todo:nth-child(odd){
+    background: rgb(231,161,198);
+background: linear-gradient(90deg, rgba(231,161,198,0.4822303921568627) 0%, rgba(32,26,29,1) 67%);
+}
+h2,.icons{
+    color:white;
+}
+
+
+

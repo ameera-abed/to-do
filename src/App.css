@@ -1,5 +1,6 @@
 @import './style/toDoList.css';
 @import './style/todo.css';
+@import './style/formToDo.css';
 @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
 
 *{
@@ -7,4 +8,8 @@
   padding:0; 
   box-sizing: border-box;
   font-family: 'Monda', sans-serif;
+}
+body{
+  background: rgb(212,37,255);
+background: linear-gradient(90deg, rgba(212,37,255,1) 0%, rgba(32,26,29,1) 67%);
 }
